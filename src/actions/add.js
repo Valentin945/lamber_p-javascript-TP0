@@ -8,8 +8,17 @@
 * - you must use the functions from "../store"
 *
 */
+const  {getState, setState} = require('../store')
 
-const add = () => {};
+
+const add = (elmts) => {
+  var tmp = {}
+  if (Array.isArray(elmts))
+     tmp.pictures = [...getState().pictures, ...elmts]
+  else
+     tmp.pictures = [...getState().pictures, elmts]
+  setState(tmp)
+};
 
 module.exports = {
   add

@@ -6,8 +6,11 @@
 * - you must use the functions from "../store"
 *
 */
+const { getState } = require('../store');
 
-const list = () => {};
+const list = () => {
+  return [...getState().pictures];
+};
 
 module.exports = {
   list

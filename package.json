@@ -5,6 +5,10 @@
   "author": "Quentin Pré <pre.quentin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
   }
 }
